@@ -1,153 +1,130 @@
-<html>
+cat << 'EOF' > ~/Desktop/index.html
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Estadio Lightshow Experiencia</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: #050505; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, sans-serif; display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100vh; text-align: center; box-sizing: border-box; padding: 40px 20px; transition: background-color 0.02s ease; overflow: hidden; }
+        .header-zone { margin-top: 20px; }
+        h1 { font-size: 2.2rem; letter-spacing: 2px; margin: 0 0 10px 0; color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+        p { font-size: 1.1rem; color: #b3b3b3; max-width: 320px; margin: 0 auto; line-height: 1.5; }
+        .btn-container { display: flex; justify-content: center; align-items: center; flex-grow: 1; }
+        .btn-pulsar { background: linear-gradient(135deg, #00ffcc, #0055ff); border: none; color: white; width: 180px; height: 180px; font-size: 1.3rem; font-weight: bold; border-radius: 50%; cursor: pointer; box-shadow: 0 0 30px rgba(0, 255, 204, 0.4); text-transform: uppercase; }
+        .footer-zone { margin-bottom: 20px; width: 100%; }
+        .status { font-size: 1rem; color: #00ffcc; font-weight: 500; }
+        .instruccion-iphone { display: none; margin-top: 15px; font-size: 0.85rem; color: #ffcc00; background: rgba(255, 204, 0, 0.1); padding: 10px; border-radius: 8px; border: 1px solid rgba(255, 204, 0, 0.2); }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Show de Luces - Estadio&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #111;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 { font-size: 2rem; margin-bottom: 10px; color: #00ffcc; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p { font-size: 1.1rem; max-width: 80%; margin-bottom: 30px; color: #ccc; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #00ffcc, #0077ff);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn:active { transform: scale(0.95); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.status { margin-top: 20px; font-size: 0.9rem; color: #888; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.active-glow { animation: pulse 0.5s infinite alternate; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes pulse { from { background-color: #111; } to { background-color: #222; } }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;¡BIENVENIDO AL SHOW!&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Presiona el botón de abajo para activar tu flash al ritmo de la música del estadio.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="btn" id="startBtn"&gt;UNIRSE AL SHOW&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="status" id="statusText"&gt;Esperando activación...&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const startBtn = document.getElementById('startBtn');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const statusText = document.getElementById('statusText');</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>let audioContext;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let analyser;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let microphone;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let javascriptNode;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let track; // Guardará la pista de video de la cámara para controlar el flash</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Umbral de sensibilidad (Ajusta este número entre 0 y 255 si el estadio es muy ruidoso)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const UMBRAL_RITMO = 45;<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>startBtn.addEventListener('click', async () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>statusText.innerText = "Solicitando permisos de cámara y micrófono...";</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 1. Pedir acceso a la cámara trasera para controlar el Flash (torch)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const videoStream = await navigator.mediaDevices.getUserMedia({</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>video: { facingMode: { exact: "environment" } }</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}).catch(async () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>// Si falla la trasera (ej. en laptops o algunos dispositivos), intenta con cualquier cámara</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>return await navigator.mediaDevices.getUserMedia({ video: true });</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>track = videoStream.getVideoTracks()[0];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 2. Pedir acceso al micrófono para capturar el audio ambiental del estadio</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// Configurar el analizador de audio de JavaScript</p>
-<p class="p1"><span class="Apple-converted-space">                </span>audioContext = new (window.AudioContext || window.webkitAudioContext)();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>analyser = audioContext.createAnalyser();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>microphone = audioContext.createMediaStreamSource(audioStream);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>analyser.smoothingTimeConstant = 0.3;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>analyser.fftSize = 1024;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>microphone.connect(analyser);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>analyser.connect(javascriptNode);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>javascriptNode.connect(audioContext.destination);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// Ocultar botón y cambiar interfaz</p>
-<p class="p1"><span class="Apple-converted-space">                </span>startBtn.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.body.classList.add('active-glow');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>statusText.innerText = "¡Sincronizado! Mantén tu pantalla encendida y apunta tu flash hacia el frente.";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// Procesar el audio en tiempo real</p>
-<p class="p1"><span class="Apple-converted-space">                </span>javascriptNode.onaudioprocess = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const array = new Uint8Array(analyser.frequencyBinCount);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>analyser.getByteFrequencyData(array);</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>// Obtener el promedio de volumen de las frecuencias bajas (los golpes/beats de la música)</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>let values = 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const length = array.length;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>for (let i = 0; i &lt; length; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>values += array[i];</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const promedioVolumen = values / length;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>// Si el volumen supera nuestro umbral, encendemos el flash temporalmente</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (promedioVolumen &gt; UMBRAL_RITMO) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>controlarFlash(true);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>controlarFlash(false);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>} catch (err) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>console.error(err);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>statusText.innerText = "Error: Asegúrate de aceptar todos los permisos de cámara y micrófono.";</p>
-<p class="p1"><span class="Apple-converted-space">                </span>statusText.style.color = "#ff4444";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Función para encender o apagar el flash (Soporta Android y navegadores modernos)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function controlarFlash(encender) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (track &amp;&amp; typeof track.getCapabilities === 'function') {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const capabilities = track.getCapabilities();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// Verificar si el dispositivo físicamente tiene flash/antorcha</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (capabilities.torch) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>track.applyConstraints({</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>advanced: [{ torch: encender }]</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}).catch(e =&gt; console.log("Error aplicando flash:", e));</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="header-zone">
+        <h1 id="mainTitle">LIGHTSHOW ESTADIO</h1>
+        <p id="mainDesc">Sincroniza tu dispositivo con el sonido local.</p>
+    </div>
+    <div class="btn-container">
+        <button class="btn-pulsar" id="startBtn">ACTIVAR<br>LUCES</button>
+    </div>
+    <div class="footer-zone">
+        <div class="status" id="statusText">Esperando conexión...</div>
+        <div class="instruccion-iphone" id="iphoneNotice">
+            <strong>⚠️ USUARIO DE IPHONE:</strong> Apunta la pantalla hacia la cancha. ¡Brillará con el ritmo!
+        </div>
+    </div>
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        const statusText = document.getElementById('statusText');
+        const iphoneNotice = document.getElementById('iphoneNotice');
+        const mainTitle = document.getElementById('mainTitle');
+        const bodyElement = document.body;
+        let audioContext, analyser, microphone, javascriptNode, track; 
+        let isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        let umbralDinamico = 40; 
+        let ruidosCapturados = [];
+        let calibrando = true;
+
+        startBtn.addEventListener('click', async () => {
+            statusText.innerText = "Calibrando sonido ambiente (1s)...";
+            try {
+                try {
+                    const videoStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } } });
+                    track = videoStream.getVideoTracks();
+                } catch (e) {}
+                
+                const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                
+                // Filtro para capturar bajos y cuerpo medio de las frecuencias musicales (420Hz)
+                const filtroEnfoque = audioContext.createBiquadFilter();
+                filtroEnfoque.type = "lowpass";
+                filtroEnfoque.frequency.setValueAtTime(420, audioContext.currentTime);
+
+                analyser = audioContext.createAnalyser();
+                microphone = audioContext.createMediaStreamSource(audioStream);
+                javascriptNode = audioContext.createScriptProcessor(1024, 1, 1); // Bloque de procesamiento más pequeño para calibrar más rápido
+
+                analyser.smoothingTimeConstant = 0.12;
+                analyser.fftSize = 256;
+
+                microphone.connect(filtroEnfoque);
+                filtroEnfoque.connect(analyser);
+                analyser.connect(javascriptNode);
+                javascriptNode.connect(audioContext.destination);
+
+                startBtn.style.display = 'none';
+                mainTitle.innerText = "¡CONECTADO AL SHOW!";
+                if (isIos) iphoneNotice.style.display = "block";
+
+                // CAMBIO A 1 SEGUNDO (1000 milisegundos)
+                setTimeout(() => {
+                    calibrando = false;
+                    if(ruidosCapturados.length > 0) {
+                        const promedioRuidoBase = ruidosCapturados.reduce((a, b) => a + b, 0) / ruidosCapturados.length;
+                        // Ajuste de sensibilidad óptimo sobre el ruido base medido
+                        umbralDinamico = promedioRuidoBase + 15; 
+                    }
+                    statusText.innerText = "¡Sincronizado! Disfruta el show.";
+                }, 1000);
+
+                javascriptNode.onaudioprocess = () => {
+                    const array = new Uint8Array(analyser.frequencyBinCount);
+                    analyser.getByteFrequencyData(array);
+                    let values = 0;
+                    
+                    const rangoMusical = Math.min(array.length, 20); 
+                    for (let i = 0; i < rangoMusical; i++) { values += array[i]; }
+                    const promedioVolumen = values / rangoMusical;
+
+                    if (calibrando) {
+                        ruidosCapturados.push(promedioVolumen);
+                    } else {
+                        if (promedioVolumen > umbralDinamico) { 
+                            ejecutarParpadeo(true); 
+                        } else { 
+                            ejecutarParpadeo(false); 
+                        }
+                    }
+                };
+            } catch (err) {
+                statusText.innerText = "Error de permisos.";
+            }
+        });
+
+        function ejecutarParpadeo(activar) {
+            if (activar) {
+                bodyElement.style.backgroundColor = "#ffffff"; 
+                if (track && track && typeof track.applyConstraints === 'function') {
+                    track.applyConstraints({ advanced: [{ torch: true }] }).catch(() => {});
+                }
+            } else {
+                bodyElement.style.backgroundColor = "#050505";
+                if (track && track && typeof track.applyConstraints === 'function') {
+                    track.applyConstraints({ advanced: [{ torch: false }] }).catch(() => {});
+                }
+            }
+        }
+    </script>
 </body>
 </html>
+EOF
